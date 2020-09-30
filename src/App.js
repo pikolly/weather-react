@@ -1,13 +1,31 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import Main from "./Main";
+import Info from "./Info";
+import Search from "./Search";
+import Footer from "./Footer";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">hello</header>
+    <div>
+      <div className="App">
+        <Search />
+        <div className="row">
+          <div className="col">
+            <Main city="Tokyo" temp={24} />
+          </div>
+          <div className="col">
+            <Info
+              status="Cloudy"
+              humidityVal={50}
+              windspeedVal={10}
+              maxTemp={26}
+              minTemp={20}
+            />
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
-
-export default App;
