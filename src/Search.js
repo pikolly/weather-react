@@ -20,12 +20,13 @@ export default function Search() {
               type="search"
               className="form-control"
               placeholder="change city"
+              autoFocus="on"
               onChange={updateCity}
             />
             <input type="submit" className="d-none" />
           </div>
           <div className="col-3">
-            <button type="button" className="btn btn-info">
+            <button type="button" className="btn btn-primary w-100">
               Current
             </button>
           </div>

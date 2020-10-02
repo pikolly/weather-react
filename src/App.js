@@ -9,22 +9,25 @@ export default function App() {
   return (
     <div>
       <div className="App">
-        <Search />
-        <div className="row">
-          <div className="col">
-            <Main city="Tokyo" temp={24} />
-          </div>
-          <div className="col">
-            <Info
-              status="Cloudy"
-              humidityVal={50}
-              windspeedVal={10}
-              maxTemp={26}
-              minTemp={20}
-            />
+        <div className="container">
+          <Search />
+          <div className="row">
+            <div className="col">
+              <Main city="Tokyo" temp={24} />
+            </div>
+            <div className="col">
+              <Info
+                status="Cloudy"
+                humidityVal={50}
+                windspeedVal={10}
+                maxTemp={26}
+                minTemp={20}
+              />
+            </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );
