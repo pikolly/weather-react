@@ -11,14 +11,14 @@ export default function ShowTemp(props) {
     event.preventDefault();
     setUnit("celsius");
   }
-function fUnit() {
+function fahrenheit() {
     return (props.celsius * 9) / 5 + 32;
   }
 
 if (unit === "celsius") {
   return (
-      <div className="Main">
-        <h1 className="display-1 font-weight-normal">{Math.round(props.celsius)}</h1>
+      <div >
+        <span>{Math.round(props.celsius)}</span>
         <span className="units">
          {" "}
             ºC
@@ -32,9 +32,9 @@ if (unit === "celsius") {
 }
  else {
     return (
-      <div className="Main">
-      <h1 className="display-1 font-weight-normal">{Math.round(fUnit())}</h1>
-        <span className="unit">
+      <div >
+      <span>{Math.round(fahrenheit())}</span>
+        <span className="units">
           <a href="/" onClick={cUnit}>
             °C
           </a>{" "}
@@ -44,3 +44,5 @@ if (unit === "celsius") {
     );
   }
 }
+
+//      <h1 className="display-1 font-weight-normal">{Math.round(fahrenheit())}</h1>

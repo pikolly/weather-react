@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ShowTemp from "./ShowTemp";
 import "./App.css";
 import Icon from "./Icon";
