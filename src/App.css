@@ -57,6 +57,10 @@ body {
   margin: 0px 10px 20px 10px;
   font-size: 18px;
 }
+.Forecast img {
+  margin: 0 auto;
+  width: 52px;
+}
 
 .Footer {
   display: block;
