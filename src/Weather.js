@@ -79,6 +79,7 @@ export default function Weather(props) {
             />
           </div>
         </div>
+        <hr/>
         <div className="row">
           <Forecast city={weatherData.city} unit={unit} />
         </div>
