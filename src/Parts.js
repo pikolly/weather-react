@@ -14,11 +14,30 @@ export default function WeatherForecastPreview(props) {
     return `${temperature}°C`;
   }
 
-  return (
-    <div className="col">
-      <div>{hours()}</div>
-   <div><Icon/></div>
-      <div>{temperature()}</div>
-    </div>
-  );
+  function fahrenheit() {
+    let fahrenheit = Math.round((props.data.main.temp * 9) / 5 + 32);
+    return `${fahrenheit}°F`;
+  }
+
+  if (props.unit === "celsius") {
+    return (
+      <div className="col">
+        <div>{hours()}</div>
+        <div>
+          <Icon code={props.data.weather[0].icon}/>
+        </div>
+        <div>{temperature()}</div>
+      </div>
+    );
+  } else {
+    return (
+      <div className="col">
+        <div>{hours()}</div>
+        <div>
+          <Icon />
+        </div>
+        <div>{fahrenheit()}</div>
+      </div>
+    );
+  }
 }
