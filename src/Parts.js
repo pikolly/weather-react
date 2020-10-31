@@ -34,7 +34,7 @@ export default function WeatherForecastPreview(props) {
       <div className="col">
         <div>{hours()}</div>
         <div>
-          <Icon />
+          <Icon code={props.data.weather[0].icon} />
         </div>
         <div>{fahrenheit()}</div>
       </div>
