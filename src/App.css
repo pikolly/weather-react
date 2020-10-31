@@ -44,6 +44,11 @@ body {
 .Info .space {
   margin-right: 20px;
 }
+.Forecast {
+  text-align: center;
+  margin: 10px 10px;
+  font-size: 18px;
+}
 
 .Footer {
   display: block;
