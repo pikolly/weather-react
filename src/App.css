@@ -35,6 +35,9 @@ body {
   font-size: 20px;
   min-width: 60px;
 }
+.Icon {
+  display: block;
+}
 .Info {
   line-height: 35px;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ShowTemp from "./ShowTemp";
 import "./App.css";
-import Icon from "./media/09d.svg";
+import Icon from "./Icon";
 
 export default function Main(props) {
  
@@ -12,7 +12,7 @@ export default function Main(props) {
         <h1 className="display-1 font-weight-normal">
         <ShowTemp celsius={props.temp} /></h1>
         <div className="icon">
-          <img src="./media/${props.icon}.svg" alt="" />
+          <Icon/>
         </div>{" "}
       </div>
     </div>
